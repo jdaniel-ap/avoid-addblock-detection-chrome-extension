@@ -1,0 +1,22 @@
+{
+  "name": "Hider",
+  "version": "0.1.1",
+  "description": "Remove pop-ups that alerts/forces you about AdBlock",
+  "manifest_version": 3,
+  "author": "Arzak",
+  "icons": {
+    "16": "/icons/helper16.png",
+    "48": "/icons/helper48.png",
+    "128": "/icons/helper128.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "hider"
+  },
+  "content_scripts": [
+    {
+      "js": ["/scripts/block.js"],
+      "matches": ["https://*/*"]
+    }
+  ]
+}
